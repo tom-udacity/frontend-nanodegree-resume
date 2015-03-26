@@ -8,9 +8,8 @@
 	overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
-	padding-left: 5%;
-	padding-right: 5%;
+.education-entry, .work-entry, .project-entry { 
+	padding: 0 5%;
 }
 
 .project-entry > img {
@@ -52,9 +51,7 @@ h4 {
 }
 
 h2, h3, h4, h5 {
-	padding: 10px;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding: 10px 5%;
 }
 
 .date-text {
@@ -143,10 +140,7 @@ a {
 }
 
 .center-content {
-	padding-top: 2.5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 2.5%
+	padding: 2.5% 5%;
 }
 
 ul {
@@ -212,8 +206,7 @@ span {
 #map {
 	display: block;
 	height: 100%;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 0 5%;
 }
 
 #mapDiv {
