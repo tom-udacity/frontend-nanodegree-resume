@@ -16,7 +16,7 @@ var bio = {
 		$header.prepend(HTMLheaderRole.replace("%data%", bio.role));
 		$header.prepend(HTMLheaderName.replace("%data%", bio.name));
 
-		for ( var contactType in bio.contacts) {
+		for (var contactType in bio.contacts) {
 			var contactValue = bio.contacts[contactType];
 
 			var contactTemplate = HTMLcontactGeneric;
@@ -63,7 +63,7 @@ var work = {
 			} ],
 	"display" : function() {
 		if (work.jobs.length > 0) {
-			for (jobIdx in work.jobs) {
+			for (var jobIdx in work.jobs) {
 				var job = work.jobs[jobIdx];
 
 				var employerHTML = HTMLworkEmployer.replace("%data%", job.employer);
@@ -98,7 +98,7 @@ var projects = {
 				"images" : [ "images/raven_web_logo.jpg" ]
 			} ],
 	"display" : function() {
-		for ( var projectIdx in this.projects) {
+		for (var projectIdx in this.projects) {
 			var project = this.projects[projectIdx];
 
 			var titleHTML = HTMLprojectTitle.replace("%data%", project.title);
@@ -138,7 +138,7 @@ var education = {
 		var $education = $("#education");
 
 		// Schools
-		for ( var schoolIdx in this.schools) {
+		for (var schoolIdx in this.schools) {
 			var school = this.schools[schoolIdx];
 
 			$education.append(HTMLschoolStart);
@@ -157,7 +157,7 @@ var education = {
 		if (this.onlineCourses.length > 0) {
 			$education.append(HTMLonlineClasses);
 
-			for ( var onlineCourseIdx in this.onlineCourses) {
+			for (var onlineCourseIdx in this.onlineCourses) {
 				var school = this.onlineCourses[onlineCourseIdx];
 
 				$education.append(HTMLschoolStart);
